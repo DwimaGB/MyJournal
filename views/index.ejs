@@ -1,0 +1,10 @@
+<main>
+    <h1>Today <span><%= locals.date %></span></h1>
+    <% for(let journal of journals){ %>
+        <article>
+            <h2><%= journal.title %></h2>
+            <p><%= journal.post %></p>
+        </article>
+        <hr>
+    <% } %>
+</main>

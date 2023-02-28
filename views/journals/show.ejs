@@ -1,0 +1,9 @@
+<main>
+    <article>
+        <h2><%= journal.title %></h2>
+        <a href="/journals/<%= journal.id %>/edit">Edit</a>
+        <%- include('../partials/deleteForm.ejs') %>
+        <span><%= journal.date %></span>
+        <p><%= journal.post %></p>
+    </article>
+</main>

@@ -1,0 +1,11 @@
+
+<main>
+    <article>
+        <h2>Compose</h2>
+        <form action="/journals/<%= journal.id %>?_method=PATCH" method="POST">
+            <%- include('./__form_fields.ejs') %>
+            <a href="/journals/<%= journal.id %>">Cancel</a>
+            <button>Publish</button>
+        </form>
+    </article>
+</main>
