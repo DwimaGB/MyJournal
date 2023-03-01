@@ -1,0 +1,42 @@
+
+label{
+    font-weight: 500;
+}
+
+input{
+    font-family: inherit;
+    font-size: 1.25rem;
+    /* color: hsl(0, 0%, 27%); */
+    border: 2px solid hsl(0, 0%, 70%);
+    padding: 0.5rem 1rem;
+
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    box-shadow:  0 0 0 2px hsl(200, 100%, 68%);
+}
+
+.search input[type="text"]{
+    font-size: inherit;
+    height: 32px;
+    width: 80%;
+}
+
+.search input[type="date"]{
+    width: 80%;
+    height: 32px;
+    
+}
+
+/*  */
+
+.form-new{
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-item{
+    flex-direction: column;
+    gap: 0.5rem;
+}

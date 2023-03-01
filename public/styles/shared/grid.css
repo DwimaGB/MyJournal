@@ -1,0 +1,22 @@
+
+.grid{
+    display: grid;
+}
+
+.grid-2-cols{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.grid-3-cols{
+    grid-template-columns: 1fr 1fr 0.5fr;
+    align-items: center;
+}
+
+.grid-align-end{
+    justify-self: end;
+}
+
+.grid-align-center{
+    justify-self: center;
+}

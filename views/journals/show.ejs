@@ -1,9 +1,17 @@
-<main>
-    <article>
-        <h2><%= journal.title %></h2>
-        <a href="/journals/<%= journal.id %>/edit">Edit</a>
-        <%- include('../partials/deleteForm.ejs') %>
-        <span><%= journal.date %></span>
-        <p><%= journal.post %></p>
-    </article>
-</main>
+<article>
+    <div class="grid grid-2-cols">
+        <h2 class="journal-title">
+            <%= journal.title %>
+        </h2>
+        <div class="flex gap grid-align-end">
+            <a href="/journals/<%= journal.id %>/edit" class="btn btn-primary btn-link">Edit</a>
+            <%- include('../partials/deleteForm.ejs') %>
+        </div>
+    </div>
+    <span>
+        <%= journal.date %>
+    </span>
+    <p class="journal-paragraph">
+        <%= journal.post %>
+    </p>
+</article>

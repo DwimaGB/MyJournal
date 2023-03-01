@@ -1,0 +1,38 @@
+:root{
+    --nav-link-gap: 2rem;
+}
+
+
+.primary-header{
+    background-color: hsl(30, 38%, 92%);;
+    padding-block: 1rem; 
+    margin-bottom: 3rem;
+}
+
+.primary-header .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title{
+    color: hsl(0, 0%, 37%);
+}
+
+.primary-navigation{
+    list-style: none;
+    display: flex;
+    gap: var(--nav-link-gap);
+}
+
+.primary-navigation a{
+    text-decoration: none;
+}
+
+.primary-navigation a:any-link{
+    color: inherit;
+   
+}
+
+.primary-navigation a:is(:hover, :focus){
+    border-bottom: 2px solid #333;
+}

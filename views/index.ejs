@@ -1,9 +1,14 @@
 <main>
-    <h1>Today <span><%= locals.date %></span></h1>
+    <div class="homepage-heading flex">
+        <h2 class="page-title">Today</h2>
+        <span class="heading-date"><%= locals.date %></span>
+    </div>
+    
     <% for(let journal of journals){ %>
         <article>
-            <h2><%= journal.title %></h2>
-            <p><%= journal.post %></p>
+            <h3 class="journal-title"><%= journal.title %></h3>
+            <p class="journal-paragraph"><%= journal.post.slice(0, 150)+"..." %>
+            <a href="/journals/<%= journal.id %>" class="show-post-link">view more</a></p>
         </article>
         <hr>
     <% } %>

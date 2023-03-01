@@ -1,0 +1,20 @@
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.letter-spacing-2{
+    letter-spacing: 2px;
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+.align-end{
+    align-self: flex-end;
+}
+
+.gap{
+    gap: 1rem;
+}

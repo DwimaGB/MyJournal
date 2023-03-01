@@ -1,0 +1,34 @@
+
+:root{
+    --btn-primary: hsl(208, 57%, 52%);
+    --btn-danger: hsl(0, 77%, 61%);
+
+}
+
+
+.btn{
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 7px;
+    padding: 0.625rem 2rem;
+}
+
+.btn-primary{
+    background-color: var(--btn-primary);
+}
+
+.btn-danger{
+    background-color: var(--btn-danger);
+}
+
+.btn-link:any-link{
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    
+}

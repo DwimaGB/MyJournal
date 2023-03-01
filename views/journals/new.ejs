@@ -1,10 +1,7 @@
-
-<main>
-    <article>
-        <h2>Compose</h2>
-        <form action="/journals" method="POST">
-            <%- include('./__form_fields.ejs') %>
-            <button>Publish</button>
-        </form>
-    </article>
-</main>
+<article>
+    <h2 class="page-title">Compose</h2>
+    <form action="/journals" method="POST" class="form-new flex">
+        <%- include('./__form_fields.ejs') %>
+            <button class="btn btn-primary align-end">Publish</button>
+    </form>
+</article>

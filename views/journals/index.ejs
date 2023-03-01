@@ -1,24 +1,32 @@
-<main>
-    <h2>Your Diary</h2>
-    <div>
-        <form action="/journals">
-            <label for="title">Title</label>
+<h2 class="page-title">Your Diary</h2>
+<div>
+    <form action="/journals" class="search grid grid-3-cols">
+        <div>
+            <label for="title">Title: </label>
             <input type="text" id="title" name="title" value="<%= search.title %>">
-
-            <label for="date">Date</label>
+        </div>
+        <div>
+            <label for="date">Date: </label>
             <input type="date" id="date" name="date" value="<%= search.date %>">
+        </div>
 
-            <button>Search</button>
-        </form>
-    </div>
-    <% journals.forEach(journal=>{ %>
-        <article>
-            <h3><%= journal.title %>  <a href="/journals/<%= journal.id %>">View</a></h3>
-            <span><%= (new Date(journal.date)).toLocaleString('en-US', {year: 'numeric', month: 'short', day: 'numeric'}) %></span>
-            <p><%= journal.post %></p>
-         
-        </article>
-        <hr>
-    <% }) %>
+        <div class="grid-align-center">
+            <button class="btn btn-primary">Search</button>
+        </div>
+    </form>
+</div>
+<% journals.forEach(journal=>{ %>
+    <article>
+        <h3 class="journal-title">
+            <%= journal.title %>
+        </h3>
+        <span>
+            <%= (new Date(journal.date)).toLocaleString('en-US', {year: 'numeric' , month: 'short' , day: 'numeric' })
+                %>
+        </span>
+        <p class="journal-paragraph"><%= journal.post.slice(0, 150)+"..." %>
+            <a href="/journals/<%= journal.id %>" class="show-post-link">view more</a></p>
 
-</main>
+    </article>
+    <hr>
+<% }) %>

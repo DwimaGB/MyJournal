@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&display=swap');
+@import 'shared/header.css';
+@import 'shared/utility.css';
+@import 'shared/buttons.css';
+@import 'shared/grid.css';
+@import 'shared/form.css';
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: hsl(210, 10%, 23%);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+}
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+textarea{
+    resize: none;
+    font-size: 1.5rem;
+    color: inherit;
+}
+
+.flex{
+    display: flex;
+}
+
+hr{
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+/* Homepage */
+.homepage-heading{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading-date{
+    font-size: 1.5rem;
+    color: hsl(210, 10%, 43%);;
+}
+
+/* Page */
+
+.page-title{
+    font-size: 2.5rem;
+}
+
+/* journal */
+
+.journal-title{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.journal-paragraph{
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    line-height: 1.5;
+}
+
+/* view-more */
+.show-post-link{
+    text-decoration: none;
+    color: hsl(220, 77%, 34%);
+}
+
+.show-post-link:hover{
+    border-bottom: 2px solid hsl(220, 77%, 34%);
+}
+
+
+/* errorMessage */
+.error-message{
+    font-weight: 600;
+    color: var(--btn-danger);
+}
