@@ -1,6 +1,7 @@
 # MyJournal
 
-A personal journal website, with simple CRUD OPERATIONS(Create-Read-Update-Delete)
+A personal journal website, with simple CRUD OPERATIONS(Create-Read-Update-Delete).
+Didn't focused on styles more focused on backend.
 
 ![MyJournal homepage](./public/images/myjournal-homepage.PNG)
 ![MyJournal Create page](./public/images/myjournal-create.PNG)
