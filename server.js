@@ -1,6 +1,6 @@
 
 
-    require('dotenv').config();
+require('dotenv').config();
 
 
 const path = require('path');
@@ -24,8 +24,8 @@ const db = mongoose.connection;
 db.on('error', (e)=>{console.log(e)});
 db.once('open', ()=>console.log("Connected"));
 
-const indexRouter = require('./routes/index.js');
-const journalRouter = require('./routes/journals.js');
+const indexRouter = require('./src/routes/index.js');
+const journalRouter = require('./src/routes/journals.js');
 
 app.use(methodOverride('_method'));
 app.use('/', indexRouter);
